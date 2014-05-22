@@ -18,21 +18,23 @@
 
 <?php
 
-// going to try my hand at another switch statement
+// Let's do some loops
 
-$name = "Palumbo"; 
-
-switch ($name) {
-	case "Joseph": 
-		echo "Your first name is Joseph"; 
-		break; 
-	case "Henry": 
-		echo "Your middle name is Henry"; 
-		break; 
-	case "Palumbo": 
-		echo "You last name is Palumbo"; 
-		break; 
+$count = 0; 
+while ($count <= 10) { 
+	echo $count . ", "; 
+	$count++; 
 }
+?>
+
+<br /> 
+
+<?php // for loop 
+
+for ($count = 0; $count <= 10; $count++) {
+	echo $count . ", "; 
+}
+
 ?>
 
 </body>
