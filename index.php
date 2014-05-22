@@ -61,6 +61,7 @@
 <li><a href="comparison.php">Logical Operators</a></li>
 <li><a href="switch.php">Switch Statements</a></li>
 <li><a href="whileloops.php">While Loops</a></li>
+<li><a href="forloops.php">For Loops</a></li>
 </ul>
 
 

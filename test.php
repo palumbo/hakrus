@@ -16,27 +16,19 @@
 
 <h1>Test Page</h1>
 
-<?php
-
-// Let's do some loops
+<?php // Trying a more advanced while loop
 
 $count = 0; 
+
 while ($count <= 10) { 
-	echo $count . ", "; 
-	$count++; 
-}
-?>
-
-<br /> 
-
-<?php // for loop 
-
-for ($count = 0; $count <= 10; $count++) {
-	echo $count . ", "; 
+	if ($count == 5) { 
+		echo "FIVE, "; 
+	} else { 
+		echo $count . ", "; 
+	} $count++; 
 }
 
 ?>
-
 </body>
 </html>
 	
