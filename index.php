@@ -2,7 +2,7 @@
 <html> 
 
 <head> 
-	<title>PHP Notes</title> 
+	<title>hakr.us</title> 
 	
 	<style type="text/css"> 
 	
