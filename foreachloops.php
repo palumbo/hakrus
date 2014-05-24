@@ -75,11 +75,13 @@
 			"zip_code" => "78242"
 			); 
 			
-		foreach($person as $attribute => $data) { 
+		foreach ($person as $attribute => $data) { 
 			$attr_nice = ucwords(str_replace("_", " ", $attribute)); 
-			echo "{$attr_nice}: {$data}<br />"; 
+			echo "{$attr_nice}: {$data}<br />";   
 		}
 		?>
+		
+		<br /> 
 	
 		<div id="code"> 
 			<p> 
