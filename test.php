@@ -82,5 +82,14 @@ foreach ($person as $attribute => $data) {
 	echo "<b>{$attr_nice}</b>: {$data}<br />"; 
 }
 ?>
+
+<br /> 
+
+<?php // testing modulos
+
+echo 2 % 7; 
+
+?>
+
 </body> 
 </html> 

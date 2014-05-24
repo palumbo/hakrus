@@ -68,6 +68,7 @@
 		<li><a href="whileloops.php">While Loops</a></li>
 		<li><a href="forloops.php">For Loops</a></li>
 		<li><a href="foreachloops.php">Foreach Loops</a></li>
+		<li><a href="continue.php">Continue</a></li>
 	</ul>
 
 
