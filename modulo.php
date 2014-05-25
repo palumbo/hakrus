@@ -7,7 +7,6 @@
 
 <body> 
 
-<!--
 <?php
 
 for ($i = 0; $i <= 100; $i++) { 
@@ -18,21 +17,6 @@ for ($i = 0; $i <= 100; $i++) {
 	} 
 
 
-?>
--->
-
-<?
-
-$count = 0; 
-
-while ($count <= 10) { 
-	if ($count == 5) { 
-		$count++; 
-		$continue; 
-	}
-	echo $count . ", "; 
-	$count++; 
-}
 ?>
 
 
