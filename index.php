@@ -74,6 +74,13 @@
 	</ul>
 
 
+<h2>User-Defined Functions</h2>
+	<ul>
+		<li><a href="functions.php">Defining Functions</a></li>
+		<li><a href="function_arguments.php">Function Arguments & Returning Values</a></li>
+		<li><a href="functions_scope.php">Scope and Global Variables</a></li>
+	</ul>
+
 <h2>Side Projects & Pages</h2>
 	<ul>
 		<li><a href="die.php">Gaming Die Simulator</a></li>

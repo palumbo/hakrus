@@ -7,6 +7,29 @@
 
 <body> 
 
+	<?php
+		$a = 1; 
+		$b = 2; 
+		
+		echo $a . "<br />"; 
+		echo $b . "<br />"; 
+		
+		function sum()
+		{ 
+			global $a, $b; 
+			
+			$b = $a + $b; 
+			return $b; 
+		}
+		
+		$x = sum(); 
+		echo $x; 
+	?>
+
+
+
+
+
 <!--
 <?php 
 
@@ -68,6 +91,7 @@ foreach ($array as $i) {
 
 <?php
 
+/*
 $person = array(
 	"first_name" => "Joseph", 
 	"middle_name" => "Henry", 
@@ -90,6 +114,5 @@ foreach ($person as $attribute => $data) {
 echo 2 % 7; 
 
 ?>
+*/
 
-</body> 
-</html> 
