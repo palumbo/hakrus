@@ -69,6 +69,8 @@
 		<li><a href="forloops.php">For Loops</a></li>
 		<li><a href="foreachloops.php">Foreach Loops</a></li>
 		<li><a href="continue.php">Continue</a></li>
+		<li><a href="break.php">Break</a></li>
+		<li><a href="pointers.php">Understanding Array Pointers</a></li>
 	</ul>
 
 

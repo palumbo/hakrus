@@ -22,6 +22,8 @@
 
 <body> 
 
+<h1>Continue</h1>
+
 <?php
 
 // while loop with continue
