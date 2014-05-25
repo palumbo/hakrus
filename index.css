@@ -1,0 +1,11 @@
+body { 
+	font-family: sans-serif
+}
+
+#code { 
+	font-family: monospace; 
+	background-color: lightgrey; 
+	padding: 10px; 
+	border: 1px solid; 
+	display: inline-block;
+}
