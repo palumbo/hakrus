@@ -39,13 +39,31 @@
 				margin-bottom: 15px;
 				padding: 0px 0px 0px 20px;   
 			}
+			
+			#table { 
+				
+			}
 	</style>
 	 
 </head> 
 
 <body> 
 
+
 <span class="header"><h1>hakr.us</h1></span>
+
+
+<div id="table"> 
+	<table>
+		<tr>
+			<th>HTML</th>
+			<th>CSS</th>
+			<th>PHP</th>
+			<th>JavaScript</th>
+		</tr>
+	</table>
+</div>
+
 
 <h2>Exploring Data Types</h2>
 	<ul>
