@@ -28,9 +28,8 @@
 		} <br /> 
 	</div>
 
-
-	</div>
-
+	<p> 
+	In order to bring the global variable of <code>$bar</code> into your function, you will need to use 
 
 
 </body> 

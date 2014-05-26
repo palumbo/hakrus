@@ -33,6 +33,12 @@
 				color: grey;
 				font-size: 180%;  
 			}
+			
+			#tip { 
+				border: 1px dashed; 
+				margin-bottom: 15px;
+				padding: 0px 0px 0px 20px;   
+			}
 	</style>
 	 
 </head> 
@@ -80,6 +86,12 @@
 		<li><a href="function_arguments.php">Function Arguments & Returning Values</a></li>
 		<li><a href="functions_scope.php">Scope and Global Variables</a></li>
 	</ul>
+	
+<h2>Building Web Pages with PHP</h2>
+	<ul>
+		<li><a href="get_encoding.php">Encoding GET Values</a></li>
+		<li><a href="htmlencoding.php">Encoding for HTML</a></li>
+	</ul>
 
 <h2>Side Projects & Pages</h2>
 	<ul>
@@ -90,9 +102,39 @@
 
 <h2>Quick Tips</h2>
 
+<div id="tip"> 
 <p>
 You can add "tabs" to HTML by using emsp;
 </p>
+</div>
 
+<div id="tip"> 
+<p>
+Display error reporting in a PHP script without changing values in php.ini: 
+	<ul>
+		<li>ini_set('display_errors', 'On'); </li>
+		<li>error_reporting(E_ALL); </li>
+	</ul>
+</p>
+</div>	
+
+<div id="tip"> 
+	<p>
+	Useful debugging tools: 
+	<dl> 
+		<dt><code>print_r</code></dt>
+			<dd>Print readable array</dd>
+		<dt><code>gettype($variable);</code>
+			<dd>prints variable type</dd>
+		<dt><code>var_dump($variable);</code></dt>
+			<dd>varable type and value</dd>
+		<dt><code>get_defined_vars();</code></dt>
+			<dd>Is an array of all defined variables known in PHP</dd>
+		<dt><code>debug_backtrace</code></dt>
+			<dd>Will give you an array of all the function calls</dd>
+	</dl>
+	</p>
+</div>
+	
 </body> 
 </html> 
