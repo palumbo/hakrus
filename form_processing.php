@@ -5,22 +5,19 @@
 ?>
 </pre>
 
-
 <?php 
-
-	if (isset($_POST['username'])) { 
-		$username = $_POST['username']; 
-	} else { 
-		$username = ""; 
-	}
-	if (isset($_POST['password'])) { 
-		$password = $_POST['password']; 
-	} else { 
-		$password = ''; 
+	if (isset($_POST['submit'])) { 
+		echo "Form was submitted"; 
 	}
 
-	echo "{$username}: {$password}"; 
+	// set default value using ternary operators 
+	// boolean test ? value_if_true : value_if_false
+	$username = isset($_POST['username']) ? $_POST['username'] : "Bob"; 
+	$password = isset($_POST['password']) ? $_POST['password'] : ""; 
+	
 
-	// echo sprintf('The username is %s and the password is %s', $username, $password); 
-?>
-
+	?>
+	
+	<?php 
+		echo "{$username}:{$password}"; 
+	?>
