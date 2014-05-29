@@ -1,27 +1,56 @@
+<pre>
+<?php 
+	// print_r($_POST); 
+
+	$die1 = ""; 
+	$die2 = ""; 
+
+	if (isset($_POST['die1'])) { 
+		$die1 = rand(1,6); 
+		 		
+	}
+
+	if (isset($_POST['die2'])) { 
+		$die2 = rand(1,6); 
+		}
+
+	if (isset($_POST['both'])) { 
+		$die1 = rand(1,6); 
+		$die2 = rand(1,6); 
+		// echo $die1 . " " . $die2; 
+	}
+	
+
+?>
+</pre>
+
+
 <!DOCTYPE HTML5>
 <html> 
 
 <head> 
-<title>Random Number</title> 
+<title>Die Simulation</title> 
 </head> 
 
 <body> 
 
-<h3>Palumbo's Die Simulator</h3>
 
-
-<!-- SIX SIDED DIE --> 
-<i>6-Sided Die 1</i>: <b><?php echo rand(1,6); ?></b><br /> 
-<i>6-Sided Die 2</i>: <b><?php echo rand(1,6); ?></b><br /> 
-
+<form action="die.php" method="post"> 
+<?php echo "Die 1: {$die1}"; ?> <br /> 
+<input type="submit" name="die1" value="Roll Die 1" /> <br /> 
 <br /> 
-<hr /> 
+<?php echo "Die 2: {$die2}"; ?> <br /> 
+<input type="submit" name="die2" value="Roll Die 2" /> <br /> 
 <br /> 
+<input type="submit" name="both" value="Roll Both" /> <br /> 
 
-<!-- TWENTY SIDED DIE --> 
-<i>20 Sided Die</i>: <b><?php echo rand(1, 20); ?></b><br /> 
+</form>
+
 
 
 
 </body> 
 </html> 
+
+
+
