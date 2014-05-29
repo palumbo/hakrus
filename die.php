@@ -4,6 +4,7 @@
 
 	$die1 = ""; 
 	$die2 = ""; 
+	$die3 = ""; 
 
 	if (isset($_POST['die1'])) { 
 		$die1 = rand(1,6); 
@@ -20,6 +21,10 @@
 		// echo $die1 . " " . $die2; 
 	}
 	
+	if (isset($_POST['20die'])) { 
+		$die3 = rand(1,20); 
+	}
+	
 
 ?>
 </pre>
@@ -34,7 +39,6 @@
 
 <body> 
 
-
 <form action="die.php" method="post"> 
 <?php echo "Die 1: {$die1}"; ?> <br /> 
 <input type="submit" name="die1" value="Roll Die 1" /> <br /> 
@@ -43,8 +47,14 @@
 <input type="submit" name="die2" value="Roll Die 2" /> <br /> 
 <br /> 
 <input type="submit" name="both" value="Roll Both" /> <br /> 
+<hr /> 
+<hr /> 
+<?php echo "20 Sided Die: {$die3}"; ?> <br /> 
+<input type="submit" name="20die" value="Roll 20 Die" /> <br /> 
+
 
 </form>
+
 
 
 
