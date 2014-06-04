@@ -10,17 +10,26 @@
 	?>
 	
 	<?php 
-		// 2. perform the database query
-		$query  = "select * ";
-		$query .= "from subjects ";  
-		$query .= "where visible = 1 "; 
-		$query .= "order by position asc "; 
+		$menu_name = "Edit me"; 
+		$position = 4; 
+		$visible = 1; 
+	
+		// 2. perform database query	
+		$query = "insert into subjects ("; 
+		$query .= " menu_name, position, visible"; 
+		$query .= ") values ("; 
+		$query .= " '{$menu_name}', {$position}, {$visible}"; 
+		$query .= ")"; 
 		
 		$result = mysqli_query($connection, $query); 
 		
 		// test if there was a query error
-		if (!$result) { 
-			die("Database query failed"); 
+		if ($result) {
+			// success
+			// redirect_to("somepage.php")
+			echo "Success!"; 
+		} else {  
+			die("Database query failed " . mysqli_error($connection)); 
 		}
 	?>
 	
@@ -33,23 +42,7 @@
 	
 	<body> 
 	
-	
-	<!-- outputs the mysql table data in an unordered list --> 
-	<ul>
-	<?php while ($subject = mysqli_fetch_assoc($result)) { ?>
-	<li><?php echo $subject["menu_name"] . " (" . $subject["id"] . ")"; ?></li>
-	<?php
-	}
-	?>
-	</ul>	
-	
-	
-	
-		<?php 
-			// 4. release the returned data
-			mysqli_free_result($result); 
-		?>
-	
+		
 	</body> 
 	</html> 
 	
