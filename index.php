@@ -11,6 +11,10 @@
 				font-family: Arial, Verdana, sans-serif;
 				padding: 50px;
 				}
+				
+			#table { 
+	
+			}
 			
 			/* links */
 			a:link {
@@ -40,9 +44,7 @@
 				padding: 0px 0px 0px 20px;   
 			}
 			
-			#table { 
-				
-			}
+			
 	</style>
 	 
 </head> 
